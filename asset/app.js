@@ -80,16 +80,12 @@ $('.modal-container').addEventListener('click', function (e) {
 
 $('#btn-submit').onclick = function () {
     if (document.getElementById("modalInput").value == vocabularys[currentIndex].vocabulary) {
-        currentIndex++
         showVocabulary()
         document.getElementById("modalInput").value = ''
-    }
-    if (currentIndex >= vocabularys.length) {
-        currentIndex = 0
-
+        document.getElementById("progress").value=`${((currentIndex+1)/(vocabularys.length))*100}`   
     }
     removeActive()
-    loadCurrent()
+    
 }
 
 $('#btn-Now').onclick = function () {
@@ -109,6 +105,12 @@ $('.pre').onclick = function () {
     removeshowVocabulary()
 }
 $('.nextTo').onclick = function () {
+    currentIndex++
+    if (currentIndex >= vocabularys.length) {
+        currentIndex = 0
+
+    }
+    loadCurrent()
     removeshowVocabulary()
 }
 
