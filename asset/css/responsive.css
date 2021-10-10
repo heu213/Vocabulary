@@ -1,0 +1,13 @@
+@media screen and (max-width:740px)
+{
+    .btn
+    {
+     margin: auto;
+    }
+    .content
+    {
+        flex-direction: column;
+        
+    }
+
+}

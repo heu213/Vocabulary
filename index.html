@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="body">
+            <h1 class="body_heading">
+                Pratice Vocabulary
+            </h1>
+        </div>
+        <input id="progress" value="0" class="progress" type="range" step="2" min="0" max="100">
+        <div class="content">
+            <div class="content-null"></div>
+            <div class="content-flex">
+                <div>
+                    <img id="myImg"
+                        src="https://64.media.tumblr.com/4f648fb365c1501f91d3b3cb9415dcf0/tumblr_oqi1tr4Wpb1qbd81ro1_1280.jpg"
+                        class="place-img">
+                </div>
+                <label class="modal-label">
+
+                    Mean Of Vocabulary
+                </label>
+                <input id="modalInput" type="text" class="modal-input" placeholder="Input vacabulary">
+                <div class="conten__btn-submit">
+                    <button id="btn-submit" class="btn ">
+                        Submit
+                    </button>
+                    <button class="btn ">
+                        I don't know
+                    </button>
+                </div>
+            </div>
+
+            <div class="content_btn">
+
+                <button id="btn-Exit" class="btn">
+                    Exit
+                </button>
+
+
+                <button id="btn-Now" class="btn">
+                    Show hint
+                </button>
+            </div>
+        </div>
+
+        <!--Vocabulary-->
+        <div class="Vocabulary-list">
+            <div class="Vocabulary__list ">
+
+                <div class="Vocabulary__list-img">
+                    <img id="myImg2"
+                        src="https://64.media.tumblr.com/4f648fb365c1501f91d3b3cb9415dcf0/tumblr_oqi1tr4Wpb1qbd81ro1_1280.jpg"
+                        class="place-img2">
+                </div>
+                <div class="Vocabulary__list-text">
+                    <p class="Vocavulary__list-vocabulary"></p>
+                    <p class="explain"></p>
+                    <p class="partOfSpeech"></p>
+                    <p class="example"></p>
+                    <p class="meansOfExample"></p>
+                    <audio controls autoplay muted>
+
+                        <source id="myMusic" src="" type="audio/mpeg">
+
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <h3>CHÍNH XÁC</h3>
+            <button class="pre">Làm lại</button>
+            <button class="nextTo">Tiếp tục</button>
+
+        </div>
+
+    </div>
+
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./asset/app.js">
+
+    </script>
+
+</body>
+
+</html>

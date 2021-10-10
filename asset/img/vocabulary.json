@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "vocabulary": "abide by",
+    "means":"tuân theo",
+    "image":"path/abideby.png",
+    "explain":"to accept and act according to a law, an agreement",
+    "partOfSpeech": "verb",
+    "example":"The two parties agreed to abide by the judge's decision",
+    "meansOfExample":"Hai bên đã đồng ý tuân theo quyết định của tòa án.",
+    "audio":"path/audio.mp3"
+}
+    
