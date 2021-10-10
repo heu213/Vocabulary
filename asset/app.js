@@ -96,12 +96,7 @@ $('#btn-Now').onclick = function () {
 $('#btn-Exit').addEventListener('click', removeActive)
 
 $('.pre').onclick = function () {
-    currentIndex--
-    if (currentIndex < 0) {
-        currentIndex = vocabularys.length - 1
 
-    }
-    loadCurrent()
     removeshowVocabulary()
 }
 $('.nextTo').onclick = function () {
